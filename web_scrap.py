@@ -2,16 +2,23 @@ import requests
 from bs4 import BeautifulSoup
 
 response = requests.get('https://g1.globo.com/')
-response2 = requests.get('https://www.walissonsilva.com./')
+
 
 content = response.content
 
 site = BeautifulSoup(content, 'html.parser')
 
-noticia = site.find('div',attrs={'class': 'feed-post-body'})
+'''noticia = site.findAll('div',attrs={'class': 'feed-post-body'})
 
-titulo = noticia.find('a', attrs={'class' : 'feed-post-link'})
-sub_titulo = noticia.find('span', attrs={'class' : 'feed-post-metadata-section'})
+for noticia in noticia:
 
-print(titulo.text)
-print(sub_titulo.text)
+    titulo = noticia.find('a', attrs={'class' : 'feed-post-link'})
+
+    print(titulo.text)
+
+    sub_titulo = noticia.find('span', attrs={'class' : 'feed-post-metadata-section'})
+
+    if (sub_titulo):
+
+        print(sub_titulo.text)
+    print()'''
