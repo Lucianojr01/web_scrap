@@ -31,3 +31,4 @@ for produto in produto:
     print('\n\n')
 
 print(f'Número total de iterações: {contador}')
+print()
