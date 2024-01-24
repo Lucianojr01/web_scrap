@@ -27,6 +27,8 @@ estado = navegador.find_element(By.ID,'location')
 estado.clear()
 estado.send_keys("rio de janeiro")
 sleep(2)
+
 estado.send_keys(Keys.RETURN)
+
 sleep(2)
 sleep(1000)
