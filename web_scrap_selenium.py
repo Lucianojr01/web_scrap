@@ -32,4 +32,5 @@ estado.send_keys(Keys.RETURN)
 
 sleep(2)
 print()
+print()
 sleep(1000)
