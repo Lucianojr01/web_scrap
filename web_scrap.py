@@ -29,4 +29,3 @@ for noticia in noticia:
 
 news = pd.DataFrame(lista_noticias,columns=['Titulo', 'Subtitulo', 'Link'])    
 print(news)
-print()
