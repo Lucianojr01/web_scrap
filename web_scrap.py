@@ -2,16 +2,18 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd 
 
-lista_noticias = []
+#lista_noticias = []
 
-response = requests.get('https://g1.globo.com/')
+response = requests.get('https://br.1xbet.com/betsonyour/line/football/287089-brazil-campeonato-carioca')
 
 
 content = response.content
 
 site = BeautifulSoup(content, 'html.parser')
 
-noticia = site.findAll('div',attrs={'class': 'feed-post-body'})
+data_hora_jogo = site.find('div' ,attrs={'class': 'grayBack'})
+
+'''noticia = site.findAll('div',attrs={'class': 'feed-post-body'})
 
 for noticia in noticia:
 
@@ -28,9 +30,6 @@ for noticia in noticia:
     
 
 news = pd.DataFrame(lista_noticias,columns=['Titulo', 'Subtitulo', 'Link'])    
-print(news)
+print(news)'''
 
-gut = 'git add .'
-gg = "git commit -m 'at' "
-print(gut)
-print(gg)
+print(data_hora_jogo)
