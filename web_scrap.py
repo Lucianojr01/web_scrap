@@ -29,3 +29,8 @@ for noticia in noticia:
 
 news = pd.DataFrame(lista_noticias,columns=['Titulo', 'Subtitulo', 'Link'])    
 print(news)
+
+gut = 'git add .'
+gg = "git commit -m 'at' "
+print(gut)
+print(gg)
