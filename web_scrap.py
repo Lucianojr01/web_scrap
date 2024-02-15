@@ -58,4 +58,4 @@ df5 = pd.DataFrame(win_visi, columns=['Time visitante Vencendo'])
 odes_site = pd.concat([times,df3,df4,df5], axis=1,)
 
 print(odes_site)
-print()
+print(df3)
